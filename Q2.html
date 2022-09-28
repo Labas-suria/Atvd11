@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    <script>
+        const tipo_investimento = (prompt("Digite o tipo de investimento: "))
+        var valor_investimento = Number(prompt("Digite o valor de investimento: "))
+        var valor_total = 0
+        if (tipo_investimento === 'Poupança') {
+            valor_investimento += valor_investimento * 0.05
+        } else {
+            valor_investimento += valor_investimento * 0.10
+        }
+        alert(`Tipo de investimento: ${tipo_investimento}\n
+        Total do investimento R$: ${valor_investimento.toFixed(2)}` )
+    </script>
+</body>
+</html>
