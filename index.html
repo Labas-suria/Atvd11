@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         const product_price = Number(prompt("Product Price: "))
+         const new_product_price = product_price - product_price * 0.15
+         if(new_product_price >= 500){
+            alert(`New Product Price R$: ${new_product_price.toFixed(2)}\nExpensive`)
+         }else{
+            alert(`New Product Price R$: ${new_product_price.toFixed(2)}\nCheap`)
+         }
+    </script>
+
+</body>
+</html>

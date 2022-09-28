@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const client_name = String(prompt("Name : "))
+        const price = String(prompt("Price: "))
+
+        if(price<=200){
+            new_price = price - price * 0.10
+            alert(`Name: ${client_name}\NNew Price: R$ ${new_price.toFixed(2)}`)
+
+        }else if(price > 200 && price <= 500){
+            new_price = price - price * 0.15
+            alert(`Name: ${client_name}\NNew Price: R$ ${new_price.toFixed(2)}`)
+
+        }else if(price > 500){
+            new_price = price - price * 0.20
+            alert(`Name: ${client_name}\NNew Price: R$ ${new_price.toFixed(2)}`)
+
+        } else {
+            alert(`Entrada inválida`)
+        }
+    </script>
+</body>
+</html>

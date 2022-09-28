@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+</head>
+<body>
+    
+
+    <script>
+        var num_pessoas = Number(prompt("Digite o total de pessoas: "))
+        var num_peixes = Number(prompt("Digite o total de peixes: "))
+        var valor_total = 0
+        if (num_peixes > num_pessoas) {
+            let num_peixe_enquanto = num_peixes - num_pessoas
+            valor_total = num_pessoas * 20
+            valor_total += num_peixe_enquanto * 12
+        } else {
+            valor_total = num_pessoas * 20
+        }
+        alert(`Total de pessoas: ${num_pessoas.toFixed(2)}\n
+        Total de peixes: ${num_peixes.toFixed(2)}\n
+        Valor total R$: ${valor_total.toFixed(2)}` )
+    </script>
+</body>
+</html>
